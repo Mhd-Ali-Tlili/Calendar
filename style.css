@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.calendar-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td.today {
+    background-color: #00aaff;
+    color: white;
+    font-weight: bold;
+}
+
+td.event {
+    background-color: #ffcc80;  /* Couleur de fond orange pâle pour les jours avec événements */
+    color: #d84315;  /* Texte orange foncé */
+    border: 2px solid #ff5722;  /* Bordure orange vif */
+    position: relative;
+    font-weight: bold;
+}
+
+
+
+td:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+td:active {
+    background-color: #ddd;
+    transform: scale(0.95);
+}
+
+.date-details, .event-form {
+    margin-top: 20px;
+}
+
+.date-details {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.event-form {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.event-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form label {
+    margin-bottom: 5px;
+}
+
+.event-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.event-form button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-form button:hover {
+    background-color: #007bb5;
+}
